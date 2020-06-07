@@ -11,14 +11,26 @@ public class Main extends NumberFormatException {
         System.out.println("Wpisz zdanie: ");
         String sentence = scanner.nextLine();
 
-        System.out.println("Co chcesz zrobić?\n1. Zamień litery na wielkie\n2. Zamień litery na małe");
+        int leftBracket = 0;
+        int rightBracket = 0;
 
-        int choose = scanner.nextInt();
-
-        switch (choose){
-            case 1:
-                System.out.println(sentence.toUpperCase());
+        for (int i = 0; i < sentence.length(); i++) {
+            if(sentence.charAt(i) == '('){
+                leftBracket++;
+            }
+            else if(sentence.charAt(i) == ')'){
+                rightBracket++;
+            }
         }
+
+        if(rightBracket == leftBracket){
+            System.out.println("Ilość nawiasów z zdaniu jest poprawna");
+        }
+        else{
+            System.out.println("Ilość nawiasow w zdaniu jest niepoprawna");
+        }
+
+
 
 
     }
