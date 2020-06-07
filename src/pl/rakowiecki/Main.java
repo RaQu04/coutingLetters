@@ -30,7 +30,7 @@ public class Main extends NumberFormatException {
             System.out.println("Ilość nawiasow w zdaniu jest niepoprawna");
         }
 
-        System.out.println("Porawiony tekst");
+        System.out.println("Porawiony tekst\"Koljena poprawka\"");
 
 
 
