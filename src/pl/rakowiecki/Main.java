@@ -15,7 +15,10 @@ public class Main extends NumberFormatException {
 
         int choose = scanner.nextInt();
 
-        
+        switch (choose){
+            case 1:
+                System.out.println(sentence.toUpperCase());
+        }
 
 
     }
